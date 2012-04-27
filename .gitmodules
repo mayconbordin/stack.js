@@ -1,0 +1,18 @@
+[submodule "external/underscore"]
+	path = external/underscore
+	url = git://github.com/documentcloud/underscore.git
+[submodule "external/coffee-script"]
+	path = external/coffee-script
+	url = git://github.com/jashkenas/coffee-script.git
+[submodule "external/jquery-mousewheel"]
+	path = external/jquery-mousewheel
+	url = git://github.com/brandonaaron/jquery-mousewheel.git
+[submodule "external/jquery.terminal"]
+	path = external/jquery.terminal
+	url = git://github.com/jcubic/jquery.terminal.git
+[submodule "external/filer.js"]
+	path = external/filer.js
+	url = git://github.com/ebidel/filer.js.git
+[submodule "external/CodeMirror2"]
+	path = external/CodeMirror2
+	url = git://github.com/marijnh/CodeMirror2.git
