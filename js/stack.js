@@ -71,9 +71,18 @@ var Terminal = (function() {
 		},
 		
 		help: function() {
+			var i = 0;
+			var s = '';
 			for (command in commands) {
-				terminal.echo(command);
+				s += command + "\t\t";
+				
+				if (i%4 == 0) {
+					terminal.echo(s);
+					s = '';
+				}
+				i++;
 			}
+			terminal.echo(s);
 		},
 		
 		register: function(name, list, obj) {
