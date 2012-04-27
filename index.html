@@ -9,15 +9,21 @@
     	<link rel="stylesheet" href="./css/jquery.terminal.css" />
     	<link rel="stylesheet" href="./css/codemirror.css" />
     	
+    	<!-- Libraries -->
     	<script src="./js/libs/jquery-1.7.1.min.js"></script>
     	<script src="./js/libs/underscore.min.js"></script>
+    	
+    	<!-- CoffeeScript -->
+    	<script src="./js/libs/coffee-script.js"></script>
+    	<script src="./js/libs/js2coffee.min.js"></script>
+    	
+    	<!-- jQuery Plugins -->
     	<script src="./js/libs/jquery.mousewheel-min.js"></script>
     	
     	
     	<script src="./external/jquery.terminal/js/jquery.terminal-0.4.12.min.js"></script>
     	<script src="./external/filer.js/src/filer.min.js"></script>
     	
-    	<!-- javascript vim ?? -->
     	<!-- codemirror2 -->
 		<script src="./external/codemirror2/lib/codemirror.js"></script>
 		<script src="./external/codemirror2/mode/javascript/javascript.js"></script>
@@ -25,7 +31,13 @@
     	<script src="./js/stack.js"></script>
 	</head>
 	<body>
-		<textarea id="editor" name="editor"></textarea>
+		<div id="editor">
+			<textarea id="editor-textarea" name="editor-textarea"></textarea>
+			<div id="editor-panel">
+				<input id="editor-save" class="button" type="button" value="Save" />
+				<input id="editor-cancel" class="button" type="button" value="Cancel" />
+			</div>
+		</div>
 		<div id="terminal"></div>
 	</body>
 </html>
