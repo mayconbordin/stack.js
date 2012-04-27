@@ -66,6 +66,14 @@ var Terminal = (function() {
 			}, {
 				greetings: "multiply terminals demo use help to see available commands"
 			});
+			
+			this.register('Terminal', ['help'], this);
+		},
+		
+		help: function() {
+			for (command in commands) {
+				terminal.echo(command);
+			}
 		},
 		
 		register: function(name, list, obj) {
