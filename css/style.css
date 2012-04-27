@@ -1,0 +1,30 @@
+html, body {
+	background: #333;
+	height:100%;
+}
+
+#terminal {
+	height: 200px;
+}
+
+#editor-panel {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: #eee;
+	border: 1px solid #ccc;
+	border-top-left-radius: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 5px;
+}
+
+#editor-panel .button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+#editor-panel .button:hover {
+	color: #ccc;
+}
